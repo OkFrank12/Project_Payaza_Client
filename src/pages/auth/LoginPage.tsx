@@ -33,9 +33,9 @@ const LoginPage = () => {
               boxShadow:
                 "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
             }}
-            className="w-[90%] flex justify-between h-[90%] bg-white"
+            className="w-[90%] flex lg:justify-between justify-center sm:justify-center h-[90%] bg-white"
           >
-            <div className="w-[40%] h-full items-center flex flex-col justify-center ">
+            <div className="w-[100%] h-full sm:w-[80%] md:w-[60%] text-[13px] sm:text-[13px] lg:text-[15px] items-center flex flex-col justify-center ">
               <div
                 style={{
                   boxShadow:
@@ -128,7 +128,10 @@ const LoginPage = () => {
                 </div>
               </div>
             </div>
-            <img src={illus_img} className="w-[60%] object-cover" />
+            <img
+              src={illus_img}
+              className="w-[60%] hidden sm:hidden lg:flex object-cover  "
+            />
           </section>
         </main>
       </div>

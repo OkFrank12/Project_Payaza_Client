@@ -3,6 +3,7 @@ import ProductsPage from "../pages/ProductsPage";
 import RegisterPage from "../pages/auth/RegisterPage";
 import LoginPage from "../pages/auth/LoginPage";
 import PrivateRouter from "./PrivateRouter";
+import HistoryPage from "../pages/HistoryPage";
 
 export const MainRouter = createBrowserRouter([
   {
@@ -10,6 +11,14 @@ export const MainRouter = createBrowserRouter([
     element: (
       <PrivateRouter>
         <ProductsPage />
+      </PrivateRouter>
+    ),
+  },
+  {
+    path: "/history",
+    element: (
+      <PrivateRouter>
+        <HistoryPage />
       </PrivateRouter>
     ),
   },

@@ -3,7 +3,8 @@ import { AiOutlineClose } from "react-icons/ai";
 import { IoBag } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
 import { onToggleState } from "../global/reduxState";
-
+import CartSummary from "./CartSummary";
+import Total from "./Total";
 const Cart = () => {
   const [cart, setCart] = useState<Array<{}>>([1]);
   const toggle = useSelector((state: any) => state.toggle);
@@ -21,9 +22,9 @@ const Cart = () => {
         width: "100%",
         height: "100%",
       }}
-      className="fixed top-0 z-20 flex justify-end"
+      className="fixed top-0 z-50 flex justify-end"
     >
-      <section className="w-[400px] h-full bg-white">
+      <section className="w-[400px] overflow-y-scroll h-full bg-white">
         {cart?.length === 0 ? (
           <>
             <AiOutlineClose
@@ -43,8 +44,8 @@ const Cart = () => {
             </div>
           </>
         ) : (
-          <div className="w-full">
-            <div className="w-full justify-between h-[100px] shadow-md p-3 flex items-center">
+          <>
+            <div className="w-[400px] z-10 bg-white fixed justify-between h-[100px] shadow-md p-3 flex items-center">
               <p className="font-bold text-[30px] text-slate-500 capitalize">
                 Shopping cart
               </p>
@@ -54,7 +55,12 @@ const Cart = () => {
                 className=" text-slate-500 cursor-pointer hover:text-slate-800 duration-500"
               />
             </div>
-          </div>
+
+            <div className="mt-[110px]"></div>
+            <CartSummary />
+            <div className="mt-[120px]"></div>
+            <Total />
+          </>
         )}
       </section>
     </div>
