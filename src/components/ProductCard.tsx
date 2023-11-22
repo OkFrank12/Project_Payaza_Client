@@ -5,6 +5,7 @@ import { MdVisibility } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { onToggleState } from "../global/reduxState";
 import Cart from "./Cart";
+import { Link } from "react-router-dom";
 const ProductCard = () => {
   const toggle = useSelector((state: any) => state.toggle);
   const dispatch = useDispatch();
@@ -24,9 +25,12 @@ const ProductCard = () => {
             >
               <IoBag size={30} />
             </div>
-            <div className="w-[50px] mx-1 rounded text-yellow-600 h-[50px] bg-white flex justify-center items-center">
+            <Link
+              to={`/id/detail`}
+              className="w-[50px] mx-1 rounded text-yellow-600 h-[50px] bg-white flex justify-center items-center"
+            >
               <MdVisibility size={30} />
-            </div>
+            </Link>
           </div>
         </div>
         <div className="h-[400px] w-full p-3 relative flex">

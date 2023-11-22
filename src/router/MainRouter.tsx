@@ -5,6 +5,7 @@ import LoginPage from "../pages/auth/LoginPage";
 import PrivateRouter from "./PrivateRouter";
 import HistoryPage from "../pages/HistoryPage";
 import DetailedPage from "../pages/DetailedPage";
+import BINpage from "../pages/BINpage";
 
 export const MainRouter = createBrowserRouter([
   {
@@ -24,6 +25,14 @@ export const MainRouter = createBrowserRouter([
     ),
   },
   {
+    path: "/bin",
+    element: (
+      <PrivateRouter>
+        <BINpage />
+      </PrivateRouter>
+    ),
+  },
+  {
     path: "/register",
     element: <RegisterPage />,
   },
@@ -36,7 +45,7 @@ export const MainRouter = createBrowserRouter([
     element: <LoginPage />,
   },
   {
-    path: "detail",
+    path: "/:id/detail",
     element: <DetailedPage />,
   },
 ]);
