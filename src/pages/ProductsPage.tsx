@@ -18,7 +18,7 @@ const ProductsPage = () => {
             }}
             src={abstract_img}
           />
-          <div className="absolute text-white w-full h-full flex justify-center items-center bg-[rgba(0,0,0,0.8)] top-0">
+          <div className="absolute text-white w-full h-full flex justify-center items-center bg-[rgba(27,27,27,0.79)] top-0">
             <div className="text-center">
               <h1 className="font-PoppinsBold text-[50px]">Collections</h1>
               <p className="italic text-slate-300">Products</p>

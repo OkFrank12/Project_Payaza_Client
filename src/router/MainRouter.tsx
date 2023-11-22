@@ -1,10 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
-import ProductsPage from "../pages/ProductsPage";
+
 import RegisterPage from "../pages/auth/RegisterPage";
 import LoginPage from "../pages/auth/LoginPage";
 import PrivateRouter from "./PrivateRouter";
 import HistoryPage from "../pages/HistoryPage";
 import DetailedPage from "../pages/DetailedPage";
+import Layout from "../components/Common/Layout";
 import BINpage from "../pages/BINpage";
 
 export const MainRouter = createBrowserRouter([
@@ -12,7 +13,7 @@ export const MainRouter = createBrowserRouter([
     path: "/",
     element: (
       <PrivateRouter>
-        <ProductsPage />
+        <Layout />
       </PrivateRouter>
     ),
   },
