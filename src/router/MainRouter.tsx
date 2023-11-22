@@ -47,6 +47,10 @@ export const MainRouter = createBrowserRouter([
   },
   {
     path: "/:id/detail",
-    element: <DetailedPage />,
+    element: (
+      <PrivateRouter>
+        <DetailedPage />
+      </PrivateRouter>
+    ),
   },
 ]);
