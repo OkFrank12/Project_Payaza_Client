@@ -5,6 +5,7 @@ import { MdOutlineShoppingBag } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 import logo from "../../assets/Group 5.svg"
+import Menue from "./Menu";
 const Header = () => {
   return (
     <div className="w-full flex items-center justify-center flex-col">
@@ -23,7 +24,7 @@ const Header = () => {
             </div>
             {/* second */}
         </div>
-        <div className="w-[90%] h-[70px] flex items-center justify-between">
+        <div className="w-[95%] h-[70px] flex items-center justify-between">
             <div className="">
               <img src={logo} alt="" className="w-[60%] max-md:w-[50%] max-sm:w-[50%]" />
             </div>
@@ -36,7 +37,7 @@ const Header = () => {
                 <nav className="hover:underline duration-500 transition-all cursor-pointer">Shop</nav>
                 <nav className="hover:underline duration-500 transition-all cursor-pointer">Pages</nav>
             </div>
-            <div className="flex items-center lg:gap-6 md:gap-4 text-[24px] md:text-[20px] max-sm:text-[18px] max-sm:gap-3 md:ml-6">
+            <div className="flex items-center lg:gap-6 md:gap-4 text-[24px] md:text-[20px] max-sm:text-[18px] max-sm:gap-3 md:ml-6 ">
                 <div>
                 <IoPersonCircleOutline/>
                 </div>
@@ -50,6 +51,9 @@ const Header = () => {
                 <IoSearch/>
                 </div>
             </div>
+            {/* <div className="hidden  mt-[220px] max-sm:block z-50">
+                <Menue />
+              </div> */}
         </div>
     </div>
   )

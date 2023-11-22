@@ -5,7 +5,7 @@ import { IoMdMailUnread } from "react-icons/io";
 import { FaRegClock } from "react-icons/fa6";
 const Footer = () => {
   return (
-    <div className="min-h-[400px] max-sm:min-h-[550px]  w-[100%] flex items-center justify-center relative text-white">
+    <div className="min-h-[400px] max-sm:min-h-[550px]  w-[100%] flex items-center justify-center relative text-white md:mt-[150px] max-sm:mt-[150px]">
             <img src={img} alt="" className="absolute  h-[100%] w-[100%]" />
         <div className="w-[90%] absolute   bg-slate- py-4 flex-wrap max-sm:flex grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 md:gap-3 max-sm:gap-4">
             <div className="flex-col max-sm:text-[14px]">
