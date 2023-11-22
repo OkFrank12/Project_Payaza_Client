@@ -3,7 +3,7 @@ import abstract_img from "../assets/stacks-of-bags-of-rice-sold-at-a-grocery-sho
 import { onLogOut } from "../global/reduxState";
 import ProductCard from "../components/ProductCard";
 
-const ProductsPage = () => {
+const HistoryPage = () => {
   const dispatch = useDispatch();
   return (
     <>
@@ -20,8 +20,8 @@ const ProductsPage = () => {
           />
           <div className="absolute text-white w-full h-full flex justify-center items-center bg-[rgba(0,0,0,0.8)] top-0">
             <div className="text-center">
-              <h1 className="font-PoppinsBold text-[50px]">Collections</h1>
-              <p className="italic text-slate-300">Products</p>
+              <h1 className="font-PoppinsBold text-[50px]">Loaned Orders</h1>
+              <p className="italic text-slate-300">Check History</p>
               <button
                 onClick={() => {
                   dispatch(onLogOut());
@@ -35,9 +35,14 @@ const ProductsPage = () => {
         </section>
         <main className="w-full h-screen flex justify-center items-center">
           <section className="w-[95%] h-screen pt-10">
-            <h2 className="font-PoppinsBold text-[50px] text-slate-500">
-              Products
-            </h2>
+            <div className="w-full justify-between flex">
+              <h2 className="font-PoppinsBold text-[50px] text-slate-500">
+                History
+              </h2>
+              <h2 className="font-PoppinsBold text-[50px] text-rose-500">
+                -₦5,000.00
+              </h2>
+            </div>
             <div className="w-full flex flex-wrap justify-center">
               <ProductCard />
             </div>
@@ -48,4 +53,4 @@ const ProductsPage = () => {
   );
 };
 
-export default ProductsPage;
+export default HistoryPage;

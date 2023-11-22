@@ -15,7 +15,7 @@ const ProductCard = () => {
   return (
     <>
       {toggle && <Cart />}
-      <div className="shadow-md m-5 relative cursor-pointer hover:shadow-2xl h-[550px] w-[350px]">
+      <div className="shadow-md m-2 relative cursor-pointer hover:shadow-2xl h-[550px] w-[320px]">
         <div className="absolute transition-all duration-700 z-20 hover:opacity-100 flex justify-center items-center opacity-0 w-full h-full left-0 bg-[rgba(97,99,42,0.41)] ">
           <div className="w-full h-[50px] justify-center flex">
             <div
