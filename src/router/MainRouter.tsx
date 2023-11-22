@@ -4,6 +4,7 @@ import RegisterPage from "../pages/auth/RegisterPage";
 import LoginPage from "../pages/auth/LoginPage";
 import PrivateRouter from "./PrivateRouter";
 import HistoryPage from "../pages/HistoryPage";
+import DetailedPage from "../pages/DetailedPage";
 
 export const MainRouter = createBrowserRouter([
   {
@@ -33,5 +34,9 @@ export const MainRouter = createBrowserRouter([
   {
     path: "/:token/verify-auth",
     element: <LoginPage />,
+  },
+  {
+    path: "detail",
+    element: <DetailedPage />,
   },
 ]);
