@@ -6,9 +6,6 @@ export default {
       fontFamily: {
         PoppinsBold: "Poppins-Bold",
       },
-      screens: {
-        miniTab: { max: "520px" },
-      },
     },
   },
   plugins: [],

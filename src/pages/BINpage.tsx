@@ -8,18 +8,18 @@ const BINpage = () => {
   return (
     <>
       <div className="w-full h-[100vh] flex flex-col justify-center items-center">
-        <p className="font-PoppinsBold miniTab:text-[30px] text-[60px] text-slate-500">
+        <p className="font-PoppinsBold  text-[60px] max-sm:text-[40px] text-slate-500">
           BIN Checker
         </p>
-        <div className="w-[500px] miniTab:w-[400px] text-center p-5 text-slate-500 h-[330px] border flex flex-col items-center">
-          <p className="miniTab:text-[13px]">
+        <div className="w-[500px] max-sm:w-[90%]  text-center p-5 text-slate-500 h-[330px] max-sm:h-[350px] border flex flex-col items-center">
+          <p className="">
             Experience Seamless Online transactions with our free online BIN
             Checker! Simply input the number, and our tool instantly verifies
             and validates the associated card details. stay step ahead in
             safety.
           </p>
           <div className="w-[500px] h-[200px] flex-col items-center flex mt-5">
-            <p className="font-PoppinsBold text-[20px] miniTab:font-bold miniTab:text-[14px]">
+            <p className="font-PoppinsBold text-[20px] max-sm:text-[15px] break-words">
               Enter BIN (Bank Identification Number):
             </p>
             <input
